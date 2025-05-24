@@ -88,6 +88,26 @@
         {
             "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-BitLord.json",
             "description": "ADD BITLORD: Don't want the full dinner? Then delete it and mix and match your own side dishes to get just the feast you want."
+        },
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-Anirena.json",
+            "description": "ADD ANIRENA: Craving Anime?  Add this to either the Full Dinner Package or a side dish selection."
+        },
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-TorLock.json",
+            "description": "ADD TORLOCK: Craving Anime?  Add this to either the Full Dinner Package or a side dish selection."
+        },
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-AniDex.json",
+            "description": "ADD ANIDEX: Craving Anime?  Add this to either the Full Dinner Package or a side dish selection."
+        },
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-AnimeTosho.json",
+            "description": "ADD ANIMETOSHO: Craving Anime?  Add this to either the Full Dinner Package or a side dish selection."
+        },
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-Nyaa.json",
+            "description": "ADD NYAA: Craving Anime?  Add this to either the Full Dinner Package or a side dish selection."
         }
     ],
     "cacheServers": [
