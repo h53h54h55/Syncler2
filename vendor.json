@@ -1,0 +1,26 @@
+{
+    "name": "Lobstor V2",
+    "description": "List Of the Best Syncler TORrents (v2).  Full Lobstor Dinner installs by default but feel free to uninstall and just install any combination of individual side dishes to suit your tastes. *** Buy me a coffee and keep me awake www.buymeacoffee.com/synclerlobstor ***",
+    "tutorial": "https://www.reddit.com/r/synclervendors",
+    "support": "https://www.buymeacoffee.com/synclerlobstor",
+    "website": "https://www.reddit.com/r/synclervendors",
+    "packages": [
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-Full.json",
+            "description": "The full lobstor dinner!  Gorge yourself on our full provider file with over 20 sources. If you like this consider buying a coffee www.buymeacoffee.com/synclerlobstor. Use this package on its own."
+        },
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-Piratebay.json",
+            "description": "ADD PIRATEBAY: Don't want the full dinner? Then delete it and mix and match your own side dishes to get just the feast you want. "
+        }
+    ],
+    "cacheServers": [
+        "cache.bouncy.cc"
+    ],
+    "defaults": {
+        "packages": [
+            "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-Full.json"
+        ],
+        "cacheServer": "cache.bouncy.cc"
+    }
+}
