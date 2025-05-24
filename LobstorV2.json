@@ -1,6 +1,6 @@
 {
     "name": "Lobstor V2",
-    "description": "List Of the Best Syncler V2 TORrents.  Full Lobstor Dinner installs by default but feel free to uninstall and just install any combination of individual side dishes to suit your tastes. *** Buy me a coffee and keep me awake www.buymeacoffee.com/synclerlobstor ***",
+    "description": "List Of the Best Syncler V2 TORrents.  Full Lobstor Dinner installs by default but feel free to uninstall and just install any combination of individual side dishes to suit your tastes. Full Lobstor Dinner excludes Anime providers so if thats your thing just add then in!  *** Buy me a coffee and keep me awake www.buymeacoffee.com/synclerlobstor ***",
     "tutorial": "https://www.reddit.com/r/synclervendors",
     "support": "https://www.buymeacoffee.com/synclerlobstor",
     "website": "https://www.reddit.com/r/synclervendors",
@@ -16,6 +16,10 @@
         {
             "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-TorrentIO.json",
             "description": "ADD TORRENTIO: Don't want the full dinner? Then delete it and mix and match your own side dishes to get just the feast you want."
+        },
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-Torrentz2.json",
+            "description": "ADD TORRENTZ2: Don't want the full dinner? Then delete it and mix and match your own side dishes to get just the feast you want."
         }
     ],
     "cacheServers": [
