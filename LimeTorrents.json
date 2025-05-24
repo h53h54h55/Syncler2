@@ -1,0 +1,45 @@
+{
+  "_manifest" : {
+    "name": "Lobster SideDish No 10",
+    "id": "lob.SD10-v1",
+    "version": 1,
+    "classPath": "",
+    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/LimeTorrents.json"
+  },
+"limetorrents": {
+    "name": "LIMETORRENTS",
+    "enabled": true,
+    "languages": ["en"],
+    "base_url": "https://www.limetorrents.info",
+    "fallback_urls": ["https://www.limetorrents.asia"],
+    "response_type": "text",
+    "separator": "-",
+    "movie": {
+        "query": "/search/movies/{query}",
+        "keywords": "{title} {year}"
+    },
+    "episode": {
+        "query": "/search/tv/{query}",
+        "keywords": "{title} {episodeCode}"
+    },
+    "season": {
+        "query": "/search/tv/{query}",
+        "keywords": "{title} {seasonCode}"
+    },
+    "html_parser": {
+        "row": "doc.querySelectorAll('.table2 tbody tr:nth-child(n+2)')",
+        "title": "row.querySelector('.tt-name').textContent",
+        "peers": "row.querySelector('.tdseed').textContent.replace(',','')",
+        "seeds": "row.querySelector('.tdleech').textContent.replace(',','')",
+        "size": "row.querySelector('.tdnormal:nth-child(3)').textContent",
+        "url": "row.querySelector('.tt-name a:nth-child(2)').getAttribute('href')"
+    },
+    "source_is_in_sub_page": true,
+    "title_replacement": {
+        ".": "",
+        ":": "",
+        "'": "",
+        "&": ""
+    }
+  }
+}
