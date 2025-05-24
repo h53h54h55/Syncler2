@@ -1,0 +1,62 @@
+{
+  "_manifest" : {
+    "name": "Lobster SideDish No 24",
+    "id": "lob.SD24-v1",
+    "version": 1,
+    "classPath": "",
+    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/AnimeTosho.json"
+  },
+"AnimeTosho": {
+        "name": "ANIME TOSHO",
+        "enabled": true,
+        "languages": [
+            "en"
+        ],
+        "base_url": "https://animetosho.org",
+        "fallback_urls": [],
+        "response_type": "text",
+        "movie": {
+            "query": "/search?q={query}",
+            "keywords": "{title} {year}"
+        },
+        "episode": {
+            "query": "/search?q={query}",
+            "keywords": [
+                "{title} {absoluteNumber}",
+                "{title} {episode}"
+            ]
+        },
+        "season": {
+            "query": "/search?q={query}",
+            "keywords": [
+                "{title} {seasonCode}",
+                "{title} season"
+            ]
+        },
+        "anime": {
+            "query": "/search?q={query}",
+            "keywords": [
+                "{title} {absoluteNumber}",
+                "{title} {episode}"
+            ]
+        },
+        "separator": "+",
+        "html_parser": {
+            "row": "doc.querySelectorAll('.home_list_entry')",
+            "title": "row.querySelector('.link a').textContent",
+            "peers": "row.querySelector('span:nth-child(5)').textContent.match(/\\d+/g)[1]",
+            "seeds": "row.querySelector('span:nth-child(5)').textContent.match(/\\d+/g)[0]",
+            "size": "row.querySelector('.size').textContent",
+            "url": "row.querySelector('.links a:nth-child(4)').getAttribute('href')"
+        },
+        "source_is_in_sub_page": false,
+        "title_replacement": {
+            ".": "",
+            ":": "",
+            "'": "",
+            "&": "",
+            "\"": "",
+            "*": ""
+        }
+  }
+}
