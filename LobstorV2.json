@@ -110,10 +110,6 @@
             "description": "ADD NYAA: Craving Anime?  Add this to either the Full Dinner Package or a side dish selection."
         },
         {
-            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-SuperFlix.json",
-            "description": "ADD SUPERFLIX: Want extra portions? Add this to the Full Dinner Package or a side dish selection"
-        },
-        {
             "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-OxTorrent.json",
             "description": "ADD OXTORRENT: Want something exotic? Add this foreign language speciality to the Full Dinner Package or a side dish selection"
         },
