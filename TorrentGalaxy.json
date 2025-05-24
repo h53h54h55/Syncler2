@@ -1,0 +1,44 @@
+{
+  "_manifest" : {
+    "name": "Lobster SideDish No 9",
+    "id": "lob.SD9-v1",
+    "version": 1,
+    "classPath": "",
+    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/TorrentGalaxy.json"
+  },
+"torrentgalaxy": {
+    "name": "TORRENT GALAXY",
+    "enabled": true,
+    "languages": ["en"],
+    "base_url": "https://torrentgalaxy.to",
+    "fallback_urls": ["https://tgx.sb","https://tgx.rs"],
+    "response_type": "text",
+    "separator": "+",
+    "movie": {
+        "query": "/torrents.php?search={query}",
+        "keywords": "{imdbId}"
+    },
+    "episode": {
+        "query": "/torrents.php?c41=1&c5=1&c6=1&c7=1&search={query}&lang=0&nox=2",
+        "keywords": "{title} {episodeCode}"
+    },
+    "season": {
+        "query": "/torrents.php?c41=1&c5=1&c6=1&c7=1&search={query}&lang=0&nox=2",
+        "keywords": ["{title} {seasonCode}", "{title} season"]
+    },
+    "html_parser": {
+        "row": "doc.querySelectorAll('.tgxtable .tgxtablerow')",
+        "title": "row.querySelectorAll('a') ? row.querySelectorAll('a')[1].getAttribute('title') : ''",
+        "peers": "row.querySelectorAll('span[title=\"Seeders/Leechers\"] b')[1].textContent",
+        "seeds": "row.querySelectorAll('span[title=\"Seeders/Leechers\"] b')[0].textContent",
+        "size": "row.querySelectorAll('.badge-secondary')[0].textContent",
+        "url": "row.querySelectorAll('a') ? row.querySelectorAll('a')[4].getAttribute('href') : null"
+    },
+    "title_replacement": {
+        ".": "",
+        ":": "",
+        "'": "",
+        "&": ""
+    }
+  }
+}
