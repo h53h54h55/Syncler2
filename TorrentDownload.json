@@ -1,0 +1,80 @@
+{
+  "_manifest" : {
+    "name": "Lobster SideDish No 15",
+    "id": "lob.SD15-v1",
+    "version": 1,
+    "classPath": "",
+    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/TorrentDownload.json"
+  },
+"torrentdownloads": {
+    "name": "TORRENT DOWNLOADS",
+    "enabled": true,
+    "languages": ["en"],
+    "base_url": "https://www.torrentdownloads.me",
+    "fallback_urls": [],
+    "response_type": "text",
+    "separator": "+",
+    "source_is_in_sub_page": true,
+    "movie": {
+        "query": "/search/?search={query}",
+        "keywords": "{title} {year}"
+    },
+    "episode": {
+        "query": "/search/?search={query}",
+        "keywords": "{title} {episodeCode}"
+    },
+    "season": {
+        "query": "/search/?search={query}",
+        "keywords": ["{title} {seasonCode}", "{title} season"]
+    },
+    "html_parser": {
+        "row": "doc.querySelectorAll('.inner_container')[1].querySelectorAll('.grey_bar3')",
+        "title": "row.querySelector('p a').textContent",
+        "peers": "row.querySelector('span:nth-child(3)').textContent",
+        "seeds": "row.querySelector('span:nth-child(4)').textContent",
+        "size": "row.querySelector('span:nth-child(5)').textContent",
+        "url": "row.querySelector('p a').getAttribute('href').match('http') || row.querySelector('p a').getAttribute('href').match('php') ? null : row.querySelector('p a').getAttribute('href')"
+    },
+    "title_replacement": {
+        ".": "",
+        ":": "",
+        "'": "",
+        "&": ""
+    }
+  },
+  "torrentdownload": {
+    "name": "TORRENT DOWNLOAD",
+    "enabled": true,
+    "languages": ["en"],
+    "base_url": "https://www.torrentdownload.info",
+    "response_type": "text",
+    "separator": "+",
+    "source_is_in_sub_page": true,
+    "movie": {
+        "query": "/search?q={query}",
+        "keywords": "{title} {year}"
+    },
+    "episode": {
+        "query": "/search?q={query}",
+        "keywords": "{title} {episodeCode}"
+    },
+    "season": {
+        "query": "/search?q={query}",
+        "keywords": ["{title} {seasonCode}", "{title} season"]
+    },
+    "html_parser": {
+        "row": "doc.querySelectorAll('table:nth-of-type(2) tbody tr:not(:first-child)')",
+        "title": "row.querySelector('.tt-name a').textContent",
+        "peers": "row.querySelector('.tdleech').textContent.replace(',','')",
+        "seeds": "row.querySelector('.tdseed').textContent.replace(',','')",
+        "size": "row.querySelector('.tdnormal:nth-of-type(3)').textContent",
+        "url": "row.querySelector('.tt-name a').getAttribute('href')"
+    },
+    "title_replacement": {
+        ".": "",
+        ":": "",
+        "'": "",
+        "&": ""
+    }
+  }
+}
