@@ -1,0 +1,56 @@
+{
+  "_manifest" : {
+    "name": "Lobster SideDish No 28",
+    "id": "lob.SD28-v1",
+    "version": 1,
+    "classPath": "",
+    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Torrent9.json"
+  },
+"torrent9": {
+        "name": "TORRENT NINE",
+        "enabled": true,
+        "languages": ["fr"],
+        "base_url": "https://torrent9.to",
+        "fallback_urls": [],
+        "response_type": "text",
+        "movie": {
+            "query": "/search_torrent/{query}.html",
+            "keywords": ["{title.fr} {year}","{title} {year}"]
+        },
+        "episode": {
+            "query": "/search_torrent/{query}.html",
+            "keywords": [
+                "{title} {episodeCode}",
+                "{title} {year} {episodeCode}"
+            ]
+        },
+        "season": {
+            "query": "/search_torrent/{query}.html",
+            "keywords": [
+                "{title} {seasonCode}",
+                "{title} season",
+                "{title} {year} {seasonCode}",
+                "{title} {year} season"
+            ]
+        },
+        "html_parser": {
+            "row": "doc.querySelectorAll('.table-responsive tr')",
+            "title": "row.querySelector('td:nth-child(1) a').textContent",
+            "peers": "row.querySelector('td:nth-child(4)').textContent",
+            "seeds": "row.querySelector('td:nth-child(3)').textContent",
+            "size": "row.querySelector('td:nth-child(2)').textContent",
+            "url": "row.querySelector('td:nth-child(1) a').getAttribute('href')"
+        },
+        "source_is_in_sub_page": true,
+        "title_replacement": {
+            ".": "",
+            ":": "",
+            "'": "",
+            "&": "",
+            "\"": "",
+            "*": ""
+        }
+  }
+
+
+}
