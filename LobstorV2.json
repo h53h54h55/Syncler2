@@ -20,6 +20,10 @@
         {
             "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-Torrentz2.json",
             "description": "ADD TORRENTZ2: Don't want the full dinner? Then delete it and mix and match your own side dishes to get just the feast you want."
+        },
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-Torrentquest.json",
+            "description": "ADD TORRENTQUEST: Don't want the full dinner? Then delete it and mix and match your own side dishes to get just the feast you want."
         }
     ],
     "cacheServers": [
