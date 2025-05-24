@@ -1,0 +1,66 @@
+{
+  "_manifest" : {
+    "name": "Lobster SideDish No 22",
+    "id": "lob.SD22-v1",
+    "version": 1,
+    "classPath": "",
+    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/TorLock.json"
+  },
+"Torlock": {
+        "name": "TORLOCK",
+        "enabled": true,
+        "languages": [
+            "en"
+        ],
+        "base_url": "https://www.torlock.com",
+        "fallback_urls": [
+            "https://torlock.unblockit.uno"
+        ],
+        "response_type": "text",
+        "movie": {
+            "query": "/movie/torrents/{query}.html?",
+            "keywords": "{title} {year}"
+        },
+        "episode": {
+            "query": "/television/torrents/{query}.html?",
+            "keywords": [
+                "{title} {episodeCode}",
+                "{title} {year} {episodeCode}"
+            ]
+        },
+        "season": {
+            "query": "/television/torrents/{query}.html?",
+            "keywords": [
+                "{title} {seasonCode}",
+                "{title} season",
+                "{title} {year} {seasonCode}",
+                "{title} {year} season"
+            ]
+        },
+        "anime": {
+            "query": "/anime/torrents/{query}.html?",
+            "keywords": [
+                "{title} {absoluteNumber}",
+                "{title} {episode}"
+            ]
+        },
+        "separator": "-",
+        "html_parser": {
+            "row": "doc.querySelectorAll('tbody tr')",
+            "title": "row.querySelector('td:nth-child(1) a b').textContent",
+            "peers": "row.querySelector('.tdl').textContent",
+            "seeds": "row.querySelector('.tul').textContent",
+            "size": "row.querySelector('.ts').textContent",
+            "url": "row.querySelector('td:nth-child(1) a').getAttribute('href')"
+        },
+        "source_is_in_sub_page": true,
+        "title_replacement": {
+            ".": "",
+            ":": "",
+            "'": "",
+            "&": "",
+            "\"": "",
+            "*": ""
+        }
+  }
+}
