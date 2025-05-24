@@ -1,0 +1,45 @@
+{
+  "_manifest" : {
+    "name": "Lobster SideDish No 5",
+    "id": "lob.SD5-v1",
+    "version": 1,
+    "classPath": "",
+    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Zooqle.json"
+  },
+"zooqle": {
+    "name": "ZOOQLE",
+    "enabled": true,
+    "languages": ["en"],
+    "base_url": "https://zooqle.skin",
+    "fallback_urls": [],
+    "response_type": "text",
+    "separator": "+",
+    "movie": {
+        "query": "/search?q={query}",
+        "keywords": "{title} {year}"
+    },
+    "episode": {
+        "query": "/search?q={query}",
+        "keywords": "{title} {episodeCode}"
+    },
+    "season": {
+        "query": "/search?q={query}",
+        "keywords": ["{title} {seasonCode}", "{title} season"]
+    },
+    "html_parser": {
+        "row": "doc.querySelectorAll('.table-torrents tbody tr')",
+        "title": "row.querySelector('a').textContent",
+        "peers": "row.querySelector('td:nth-child(6) .prog-r') ? row.querySelector('td:nth-child(6) .prog-r').textContent : 0",
+        "seeds": "row.querySelector('td:nth-child(6) .prog-l') ? row.querySelector('td:nth-child(6) .prog-l').textContent : 0",
+        "size": "row.querySelector('td:nth-child(4) .prog-l').textContent.replace('K','000')",
+        "url": "row.querySelectorAll('a')[2].getAttribute('href')"
+    },
+    "source_is_in_sub_page": false,
+    "title_replacement": {
+        ".": "",
+        ":": "",
+        "'": "",
+        "&": ""
+    }
+  }
+}
