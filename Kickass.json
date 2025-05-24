@@ -1,0 +1,43 @@
+{
+  "_manifest" : {
+    "name": "Lobster SideDish No 11",
+    "id": "lob.SD11-v1",
+    "version": 1,
+    "classPath": "",
+    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Kickass.json"
+  },
+"kickass": {
+    "name": "KICKASS",
+    "enabled": true,
+    "languages": ["en"],
+    "base_url": "https://thekat.app",
+    "fallback_urls": ["https://kick4ss.com", "https://kat.li", "https://thekat.info", "https://kickass.cm", "https://kat.how", "https://kickass.vc", "https://kickass2.biz", "https://kickass2.st"],
+    "response_type": "text",
+    "movie": {
+        "query": "/usearch/{query}%20category:movies/",
+        "keywords": "{title} {year}"
+    },
+    "episode": {
+        "query": "/usearch/{query}%20category:tv/",
+        "keywords": "{title} {episodeCode}"
+    },
+    "season": {
+        "query": "/usearch/{query}%20category:tv/",
+        "keywords": ["{title} {seasonCode}", "{title} season"]
+    },
+    "html_parser": {
+        "row": "doc.querySelectorAll('table:nth-child(2) tbody tr:not(.firstr)')",
+        "title": "row.querySelector('.cellMainLink').textContent",
+        "peers": "row.querySelectorAll('td')[4].textContent",
+        "seeds": "row.querySelectorAll('td')[3].textContent",
+        "size": "row.querySelector('.nobr').textContent",
+        "url": "decodeURIComponent(row.querySelectorAll('a')[1].getAttribute('href').match(/magnet(.*)/)[0])"
+    },
+    "title_replacement": {
+        ".": "",
+        ":": "",
+        "'": "",
+        "&": ""
+    }
+  }
+}
