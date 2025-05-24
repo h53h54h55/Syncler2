@@ -108,6 +108,26 @@
         {
             "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-Nyaa.json",
             "description": "ADD NYAA: Craving Anime?  Add this to either the Full Dinner Package or a side dish selection."
+        },
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-SuperFlix.json",
+            "description": "ADD SUPERFLIX: Want extra portions? Add this to the Full Dinner Package or a side dish selection"
+        },
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-OxTorrent.json",
+            "description": "ADD OXTORRENT: Want something exotic? Add this foreign language speciality to the Full Dinner Package or a side dish selection"
+        },
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-Torrent9.json",
+            "description": "ADD TORENT9: Want something exotic? Add this foreign language speciality to the Full Dinner Package or a side dish selection"
+        },
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-Rutor.json",
+            "description": "ADD RUTOR: Want something exotic? Add this foreign language speciality to the Full Dinner Package or a side dish selection"
+        },
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-Ilcorsaronero.json",
+            "description": "ADD ILCORSARONERO: Want something exotic? Add this foreign language speciality to the Full Dinner Package or a side dish selection"
         }
     ],
     "cacheServers": [
