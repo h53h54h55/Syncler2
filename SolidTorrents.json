@@ -1,0 +1,47 @@
+{
+  "_manifest" : {
+    "name": "Lobster SideDish No 14",
+    "id": "lob.SD14-v1",
+    "version": 1,
+    "classPath": "",
+    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/SolidTorrents.json"
+  },
+"solidtorrents": {
+    "name": "SOLID TORRENTS",
+    "enabled": true,
+    "languages": [
+      "en"
+    ],
+    "base_url": "https://solidtorrents.net/api/v1/search?q={query}&category=video&sort=seeders",
+    "response_type": "json",
+    "movie": {
+      "query": "",
+      "keywords": "{title} {year}"
+    },
+    "episode": {
+      "query": "",
+      "keywords": "{title} {episodeCode}"
+    },
+    "season": {
+      "query": "",
+      "keywords": [
+        "{title} {seasonCode}",
+        "{title} season"
+      ]
+    },
+    "json_format": {
+      "results": "results",
+      "url": "magnet",
+      "title": "title",
+      "seeds": "swarm.seeders",
+      "peers": "swarm.leechers",
+      "size": "size"
+    },
+    "title_replacement": {
+      ".": "",
+      ":": "",
+      "'": "",
+      "&": ""
+    }
+    }
+}
