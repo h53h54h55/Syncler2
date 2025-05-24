@@ -23,10 +23,6 @@
             "query": "\/search?q={query}&sort=size&page=3",
             "keywords": "{title} {seasonCode}"
         },
-        "anime": {
-            "query": "\/search?q={query}&sort=size&page=3",
-            "keywords": "{title} {episode}"
-        },
         "html_parser": {
             "row": "doc.querySelectorAll('.results dl')",
             "title": "row.querySelector('dt a').textContent",
