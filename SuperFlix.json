@@ -1,0 +1,33 @@
+{
+  "_manifest" : {
+    "name": "Lobster SideDish No 26",
+    "id": "lob.SD26-v1",
+    "version": 1,
+    "classPath": "",
+    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/SuperFlix.json"
+  },
+"superflix": {
+    "name": "Superflix",
+    "enabled": true,
+    "languages": [
+      "en"
+    ],
+    "base_url": "https://23dfbfad8cb2-stremio-addon-superflix.baby-beamup.club",
+    "response_type": "json",
+    "movie": {
+      "query": "/stream/movie/{query}.json",
+      "keywords": "{imdbId}"
+    },
+    "episode": {
+      "query": "/stream/series/{query}:{season}:{episode}.json",
+      "keywords": "{showImdbId}"
+    },
+    "json_format": {
+      "results": "streams",
+      "title": "description",
+      "quality": "name",
+      "url": "url"
+    },
+  }
+
+}
