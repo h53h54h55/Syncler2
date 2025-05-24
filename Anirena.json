@@ -1,0 +1,61 @@
+{
+  "_manifest" : {
+    "name": "Lobster SideDish No 21",
+    "id": "lob.SD21-v1",
+    "version": 1,
+    "classPath": "",
+    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Anirena.json"
+  },
+"anirena": {
+        "name": "ANIRENA",
+        "enabled": true,
+        "languages": [
+            "en"
+        ],
+        "base_url": "https://www.anirena.com",
+        "response_type": "text",
+        "separator": "+",
+        "movie": {
+            "query": "/?s={query}",
+            "keywords": "{title}"
+        },
+        "episode": {
+            "query": "/?s={query}",
+            "keywords": [
+                "{title} {absoluteNumber}",
+                "{title} {episode}"
+            ]
+        },
+        "season": {
+            "query": "/?s={query}",
+            "keywords": [
+                "{title} {seasonCode}",
+                "{title} season"
+            ]
+        },
+        "anime": {
+            "query": "/?s={query}",
+            "keywords": [
+                "{title} {absoluteNumber}",
+                "{title} {episode}"
+            ]
+        },
+        "html_parser": {
+            "row": "doc.querySelectorAll('div.full2')",
+            "title": "row.querySelector('table tbody tr .torrents_small_info_data1 a:nth-child(2)').textContent",
+            "peers": "row.querySelector('table tbody tr .torrents_small_leechers_data1').textContent",
+            "seeds": "row.querySelector('table tbody tr .torrents_small_seeders_data1').textContent",
+            "size": "row.querySelector('table tbody tr .torrents_small_size_data1').textContent",
+            "url": "row.querySelector('table tbody tr .torrents_small_info_data2 a:nth-child(2)').getAttribute('href')"
+        },
+        "source_is_in_sub_page": false,
+        "title_replacement": {
+            ".": "",
+            ":": "",
+            "'": "",
+            "&": "",
+            "\"": "",
+            "*": ""
+        }
+  }
+}
