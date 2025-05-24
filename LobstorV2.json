@@ -76,6 +76,18 @@
         {
             "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-YourBitTorrent.json",
             "description": "ADD YOUR BITTORRENT: Don't want the full dinner? Then delete it and mix and match your own side dishes to get just the feast you want."
+        },
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-ExtraTorrents.json",
+            "description": "ADD EXTRATORRENTS: Don't want the full dinner? Then delete it and mix and match your own side dishes to get just the feast you want."
+        },
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-BitSearch.json",
+            "description": "ADD BITSEARCH: Don't want the full dinner? Then delete it and mix and match your own side dishes to get just the feast you want."
+        },
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-BitLord.json",
+            "description": "ADD BITLORD: Don't want the full dinner? Then delete it and mix and match your own side dishes to get just the feast you want."
         }
     ],
     "cacheServers": [
