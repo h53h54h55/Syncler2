@@ -1,0 +1,57 @@
+{
+  "_manifest" : {
+    "name": "Lobster SideDish No 13",
+    "id": "lob.SD13-v1",
+    "version": 1,
+    "classPath": "",
+    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Rarbg.json"
+  },
+"Rarbg": {
+    "name": "RARBG",
+    "enabled": true,
+    "languages": [
+        "en"
+    ],
+    "base_url": "https://rarbg.unblockninja.com",
+    "fallback_urls": ["https://rargb.to", "https://www2.rarbggo.to", "https://www.rarbgproxy.to", "https://www.proxyrarbg.to"],
+    "response_type": "json",
+    "time_to_wait_between_each_request_ms": 300,
+    "time_to_wait_on_too_many_request_ms": 2000,
+    "trust_results": true,
+    "token": {
+        "query": "/pubapi_v2.php?get_token=get_token&app_id=syncler",
+        "token_validity_time_ms": 840000,
+        "token_format": {
+            "token": "token"
+        }
+    },
+    "movie": {
+        "query": "/pubapi_v2.php?mode=search&search_imdb={query}&category=movies&format=json_extended&app_id=syncler&token={token}",
+        "keywords": "{imdbId}"
+    },
+    "episode": {
+        "query": "/pubapi_v2.php?mode=search&search_string={query}&category=tv&format=json_extended&app_id=syncler&token={token}",
+        "keywords": "{title} {episodeCode}"
+    },
+    "season": {
+        "query": "/pubapi_v2.php?mode=search&search_string={query}&category=tv&format=json_extended&app_id=syncler&token={token}",
+        "keywords": [
+            "{title} {seasonCode}",
+            "{title} season"
+        ]
+    },
+    "json_format": {
+        "results": "torrent_results",
+        "url": "download",
+        "title": "title",
+        "seeds": "seeders",
+        "peers": "leechers",
+        "size": "size"
+    },
+    "title_replacement": {
+        "'s": "s",
+        "\"": ""
+    }
+  }
+
+}
