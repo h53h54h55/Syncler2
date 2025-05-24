@@ -1,0 +1,29 @@
+{
+  "_manifest" : {
+    "name": "Lobster SideDish No 2",
+    "id": "lob2.SD2-v1",
+    "version": 1,
+    "classPath": "",
+    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Lobstor-SideDish-No2.json"
+  },
+      "torrentio": {
+    "name": "TORRENTIO",
+    "enabled": true,
+    "languages": ["en"],
+    "base_url": "https://torrentio.strem.fun",
+    "response_type": "json",
+    "movie": {
+      "query": "/stream/movie/{query}.json",
+      "keywords": "{imdbId}"
+    },
+    "episode": {
+      "query": "/stream/series/{query}:{season}:{episode}.json",
+      "keywords": "{showImdbId}"
+    },
+    "json_format": {
+      "results": "streams",
+      "title": "title",
+      "hash": "infoHash"
+    }
+  }
+}
