@@ -44,7 +44,39 @@
         {
             "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-TorrentGalaxy.json",
             "description": "ADD TORRENT GALAXY: Don't want the full dinner? Then delete it and mix and match your own side dishes to get just the feast you want."
-        } 
+        },
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-LimeTorrents.json",
+            "description": "ADD LIME TORRENTS: Don't want the full dinner? Then delete it and mix and match your own side dishes to get just the feast you want."
+        },
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-Kickass.json",
+            "description": "ADD KICKASS: Don't want the full dinner? Then delete it and mix and match your own side dishes to get just the feast you want."
+        },
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-Torrentapi.json",
+            "description": "ADD TORRENTAPI: Don't want the full dinner? Then delete it and mix and match your own side dishes to get just the feast you want."
+        },
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-Rarbg.json",
+            "description": "ADD RARBG: Don't want the full dinner? Then delete it and mix and match your own side dishes to get just the feast you want."
+        }, 
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-SolidTorrents.json",
+            "description": "ADD SOLID TORRENTS: Don't want the full dinner? Then delete it and mix and match your own side dishes to get just the feast you want."
+        },
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-TorrentDownload.json",
+            "description": "ADD TORRENT DOWNLOAD: Don't want the full dinner? Then delete it and mix and match your own side dishes to get just the feast you want."
+        },
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-PirateIRO.json",
+            "description": "ADD PIRATEIRO: Don't want the full dinner? Then delete it and mix and match your own side dishes to get just the feast you want."
+        },
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-YourBitTorrent.json",
+            "description": "ADD YOUR BITTORRENT: Don't want the full dinner? Then delete it and mix and match your own side dishes to get just the feast you want."
+        }
     ],
     "cacheServers": [
         "cache.bouncy.cc"
