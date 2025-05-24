@@ -1,0 +1,40 @@
+{
+  "_manifest" : {
+    "name": "Lobster SideDish No 29",
+    "id": "lob.SD29-v1",
+    "version": 1,
+    "classPath": "",
+    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Rutor.json"
+  },
+"rutor": {
+    "name": "RuTor",
+    "enabled": true,
+    "languages": [
+      "ru"
+    ],
+    "base_url": "http://rutor.info",
+    "response_type": "text",
+    "movie": {
+      "query": "/search/{query}",
+      "keywords": "{title} {year}"
+    },
+    "episode": {
+      "query": "/search/{query}",
+      "keywords": [
+        "{title} {episodeCode}",
+        "{title} {year} {episodeCode}",
+        "{title} {season}"
+      ]
+    },
+    "html_parser": {
+      "row": "doc.querySelectorAll('tbody tr')",
+      "title": "row.querySelector('td:nth-child(2)').innerText",
+      "peers": "row.querySelector('td:nth-last-child(1) span.green').innerText",
+      "seeds": "row.querySelector('td:nth-last-child(1) span.red').innerText",
+      "size": "row.querySelector('td:nth-last-child(2)').innerText",
+      "url": "row.querySelector('td:nth-child(2) a:nth-child(2)').getAttribute('href')"
+    },
+    "source_is_in_sub_page": false,
+    "original_package": "SynclerScrapers - OpenScrapers"
+  }
+}
