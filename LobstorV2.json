@@ -24,7 +24,27 @@
         {
             "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-Torrentquest.json",
             "description": "ADD TORRENTQUEST: Don't want the full dinner? Then delete it and mix and match your own side dishes to get just the feast you want."
-        }
+        },
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-Zooqle.json",
+            "description": "ADD ZOOQLE: Don't want the full dinner? Then delete it and mix and match your own side dishes to get just the feast you want."
+        },
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-Eztv.json",
+            "description": "ADD EZTV: Don't want the full dinner? Then delete it and mix and match your own side dishes to get just the feast you want."
+        },
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-Yts.json",
+            "description": "ADD YTS: Don't want the full dinner? Then delete it and mix and match your own side dishes to get just the feast you want."
+        },
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-1337.json",
+            "description": "ADD 1337: Don't want the full dinner? Then delete it and mix and match your own side dishes to get just the feast you want."
+        },
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-TorrentGalaxy.json",
+            "description": "ADD TORRENT GALAXY: Don't want the full dinner? Then delete it and mix and match your own side dishes to get just the feast you want."
+        } 
     ],
     "cacheServers": [
         "cache.bouncy.cc"
