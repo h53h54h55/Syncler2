@@ -1,0 +1,61 @@
+{
+  "_manifest" : {
+    "name": "Lobster SideDish No 18",
+    "id": "lob.SD18-v1",
+    "version": 1,
+    "classPath": "",
+    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/ExtraTorrents.json"
+  },
+"extratorrents": {
+    "name": "EXTRA TORRENTS",
+    "enabled": true,
+    "languages": [
+        "en"
+    ],
+    "base_url": "https://extratorrent.st",
+    "fallback_urls": [
+        "https://extratorrent2.unblockninja.com",
+        "https://extratorrent.unblocked.nz",
+        "https://extra.torrentbay.to"
+    ],
+    "response_type": "text",
+    "movie": {
+        "query": "/search/?search={query}&new=1&x=0&y=0",
+        "keywords": "{title} {year}"
+    },
+    "episode": {
+        "query": "/search/?search={query}&new=1&x=0&y=0",
+        "keywords": [
+            "{title} {episodeCode}",
+            "{title} {year} {episodeCode}"
+        ]
+    },
+    "season": {
+        "query": "/search/?search={query}&new=1&x=0&y=0",
+        "keywords": [
+            "{title} {seasonCode}",
+            "{title} season",
+            "{title} {year} {seasonCode}",
+            "{title} {year} season"
+        ]
+    },
+    "html_parser": {
+        "row": "doc.querySelectorAll('table.tl tbody tr')",
+        "title": "row.querySelector('td.tli > a').textContent",
+        "peers": "row.querySelector('td:nth-child(7)').textContent",
+        "seeds": "row.querySelector('td:nth-child(6)').textContent",
+        "size": "row.querySelector('td:nth-child(5)').textContent",
+        "url": "row.querySelector('table.tl td:nth-child(1) > a').getAttribute('href')"
+    },
+    "source_is_in_sub_page": false,
+    "title_replacement": {
+        ".": "",
+        ":": "",
+        "'": "",
+        "&": "",
+        "\"": "",
+        "*": ""
+    }
+ }
+
+}
