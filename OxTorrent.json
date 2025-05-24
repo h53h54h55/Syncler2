@@ -1,0 +1,58 @@
+{
+  "_manifest" : {
+    "name": "Lobster SideDish No 27",
+    "id": "lob.SD27-v1",
+    "version": 1,
+    "classPath": "",
+    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/OxTorrent.json"
+  },
+"oxtorrent": {
+        "name": "OXTORRENT",
+        "enabled": true,
+        "languages": ["fr"],
+        "base_url": "https://oxtorrent.nl",
+        "fallback_urls": [],
+        "response_type": "text",
+        "movie": {
+            "query": "/recherche/{query}",
+        "keywords": [
+            "{title.fr} {year}",
+            "{title} {year}"
+         ]
+        },
+        "episode": {
+            "query": "/recherche/{query}",
+            "keywords": [
+                "{title} {episodeCode}",
+                "{title} {year} {episodeCode}"
+            ]
+        },
+        "season": {
+            "query": "/recherche/{query}",
+            "keywords": [
+                "{title} {seasonCode}",
+                "{title} season",
+                "{title} {year} {seasonCode}",
+                "{title} {year} season"
+            ]
+        },
+        "separator": "%20",
+        "html_parser": {
+            "row": "doc.querySelectorAll('tbody > tr')",
+            "title": "row.querySelector('a:nth-child(2)').innerHTML",
+            "peers": "row.querySelector(':nth-child(4)').textContent.trim()",
+            "seeds": "row.querySelector(':nth-child(3)').textContent.trim()",
+            "size": "row.querySelector('td:nth-child(2)').textContent.trim()",
+            "url": "row.querySelector('a:nth-child(2)').getAttribute('href')"
+        },
+        "source_is_in_sub_page": true,
+        "title_replacement": {
+            ".": "",
+            ":": "",
+            "'": "",
+            "&": "",
+            "\"": "",
+            "*": ""
+        }
+  }
+}
