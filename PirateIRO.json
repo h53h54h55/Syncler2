@@ -1,0 +1,43 @@
+{
+  "_manifest" : {
+    "name": "Lobster SideDish No 16",
+    "id": "lob.SD16-v1",
+    "version": 1,
+    "classPath": "",
+    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/PirateIRO.json"
+  },
+"pirateiro": {
+    "name": "PIRATE IRO",
+    "enabled": true,
+    "languages": [
+      "en"
+    ],
+    "base_url": "http://pirateiro.com",
+    "fallback_urls": [],
+    "response_type": "text",
+    "movie": {
+      "query": "/torrents/?c300=1&search={query}&orderby=tamanho",
+      "keywords": "{title} {year}"
+    },
+    "episode": {
+      "query": "/torrents/?search={query}&c700=1&qualityvideo=0&audiolanguage=0&subtitle=0&imdbrating=0",
+      "keywords": "{title} {episodeCode}"
+    },
+    "season": {
+      "query": "/torrents/?search={query}&c700=1&qualityvideo=0&audiolanguage=0&subtitle=0&imdbrating=0",
+      "keywords": [
+        "{title} {seasonCode}",
+        "{title} season"
+      ]
+    },
+    "html_parser": {
+      "row": "doc.querySelectorAll('tr.impar')",
+      "title": "row.querySelector('a > b').textContent",
+      "peers": "row.querySelector('td:nth-child(6) > b > font').textContent.replace(' ', '')",
+      "seeds": "row.querySelector('b > font').textContent.replace(' ', '')",
+      "size": "row.querySelector('td > font').textContent",
+      "url": "row.querySelector('a.imagnet.icon16').getAttribute('href')"
+    },
+    "source_is_in_sub_page": false
+  }
+}
