@@ -1,0 +1,67 @@
+{
+  "_manifest" : {
+    "name": "Lobster SideDish No 30",
+    "id": "lob.SD30-v1",
+    "version": 1,
+    "classPath": "",
+    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Ilcorsaronero.json"
+  },
+"ilcorsaronero": {
+    "name": "IlCorsaroNero",
+    "enabled": true,
+    "languages": [
+      "it"
+    ],
+    "base_url": "http://ilcorsaronero.link",
+    "fallback_urls": [
+      "https://ilcorsaronero.pro",
+      "https://ilcorsaronero.fun"
+    ],
+    "response_type": "text",
+    "separator": "+",
+    "movie": {
+      "query": "/argh.php?search={query}",
+      "keywords": "{title} {year}"
+    },
+    "episode": {
+      "query": "/argh.php?search={query}",
+      "keywords": [
+        "{title.it} {episodeCode}",
+        "{title.original} {episodeCode}",
+        "{title.it} {year} {episodeCode}",
+        "{title.original} {year} {episodeCode}"
+      ]
+    },
+    "season": {
+      "query": "/argh.php?search={query}",
+      "keywords": [
+        "{title.it} {seasonCode}",
+        "{title.original} {seasonCode}",
+        "{title.it} season",
+        "{title.original} season",
+        "{title.it} {year} {seasonCode}",
+        "{title.original} {year} {seasonCode}",
+        "{title.it} {year} season",
+        "{title.original} {year} season"
+      ]
+    },
+    "html_parser": {
+      "row": "doc.querySelectorAll('tr.odd, tr.odd2')",
+      "title": "row.querySelector('td:nth-child(2)').textContent",
+      "peers": "row.querySelector('td:nth-child(7)').textContent",
+      "seeds": "row.querySelector('td:nth-child(6)').textContent",
+      "size": "row.querySelector('td:nth-child(3)').textContent",
+      "url": "'magnet:?xt=urn:btih:'+ row.querySelector('input').value"
+    },
+    "title_replacement": {
+      ".": "",
+      ":": "",
+      "'": "",
+      "&": "",
+      "\"": "",
+      "*": ""
+    },
+    "source_is_in_sub_page": false,
+   
+  }
+}
