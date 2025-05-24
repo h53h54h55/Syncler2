@@ -7,7 +7,7 @@
     "packages": [
         {
             "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-Full.json",
-            "description": "The full lobstor dinner!  Gorge yourself on our full provider file with over 20 sources. If you like this consider buying a coffee www.buymeacoffee.com/synclerlobstor. Use this package on its own."
+            "description": "The full lobstor dinner!  Gorge yourself on our full provider file which includes the top 20 side dishes. Use this package on its own or add side dishes 21 and up to it."
         },
         {
             "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-Piratebay.json",
