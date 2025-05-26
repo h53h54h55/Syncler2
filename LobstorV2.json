@@ -10,6 +10,10 @@
             "description": "The full lobstor dinner!  Gorge yourself on our full provider file which includes the top 20 side dishes. Use this package on its own or add side dishes 21 and up to it."
         },
         {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-Sushi.json",
+            "description": "Sushi! Craving Anime - we got you covered. A Full Lobstor Dinner with 5 popular Anime sources included as well."
+        },
+        {
             "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-Piratebay.json",
             "description": "ADD PIRATEBAY: Don't want the full dinner? Then delete it and mix and match your own side dishes to get just the feast you want."
         },
