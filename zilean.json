@@ -9,7 +9,7 @@
 "zilean-dmm": {
     "name": "ZILEAN",
     "type_": "public server",
-    "base_url": "https://zilean.elfhosted.com/dmm/search",
+    "base_url": "https://zilean.elfhosted.com/dmm/search \",
     "response_type": "json",
     "movie": {
       "query": "/?imdbid={query}",
