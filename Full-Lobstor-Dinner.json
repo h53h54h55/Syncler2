@@ -6,6 +6,43 @@
     "classPath": "",
     "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Full-Lobstor-Dinner.json"
   },
+"eztv2": {
+      "name": "EZTV2",
+      "base_url": "https://eztvx.to",
+      "source_is_in_sub_page": true,
+      "response_type": "text",
+      "enabled": true,
+      "episode": {
+        "keywords": "{title} {episodeCode}",
+        "query": "/search/{query}"
+      },
+      "fallback_urls": [
+        "https://eztv.re",
+        "https://eztv.ag",
+        "https://eztv.it",
+        "https://eztv.ch"
+      ],
+      "html_parser": {
+       "row": "doc.querySelectorAll('tr.forum_header_border')",
+       "title": "row.querySelector('td:nth-child(2) a').textContent",
+       "size": "row.querySelector('td:nth-last-child(3)').textContent",
+       "seeds": "row.querySelector('td:last-child').textContent",
+       "url": "row.querySelector('td:nth-child(2) a').getAttribute('href')",
+       "playbackFileName": "row.querySelector('td:nth-child(2) a').textContent",
+       "playbackFileSize": "row.querySelector('td:nth-last-child(3)').textContent"
+      },
+      "languages": [
+        "en"
+      ],
+      "season": {
+        "keywords": "{title} {seasonCode}",
+        "query": "/search/{query}"
+      },
+      "title_replacement": {
+        "\"": "",
+        "'s": "s"
+      }
+    },
    "torrentio": {
     "name": "TORRENTIO",
     "enabled": true,
