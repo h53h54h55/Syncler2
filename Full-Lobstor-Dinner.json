@@ -1,8 +1,8 @@
 {
   "_manifest" : {
     "name": "Full Lobstor Dinner",
-    "id": "lob2.full-v1",
-    "version": 1,
+    "id": "lob2.full-v2",
+    "version": 2,
     "classPath": "",
     "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Full-Lobstor-Dinner.json"
   },
@@ -24,6 +24,8 @@
       "results": "streams",
       "title": "title",
       "hash": "infoHash"
+      "playbackFileName": "behaviorHints.filename",
+      "playbackFileSize": "title"
     }
   },
   "thepiratebayjson": {
