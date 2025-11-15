@@ -23,7 +23,7 @@
     "json_format": {
       "results": "streams",
       "title": "title",
-      "hash": "infoHash"
+      "hash": "infoHash",
       "playbackFileName": "behaviorHints.filename",
       "playbackFileSize": "title"
     }
