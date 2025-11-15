@@ -128,6 +128,10 @@
         {
             "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-Ilcorsaronero.json",
             "description": "ADD ILCORSARONERO: Want something exotic? Add this foreign language speciality to the Full Dinner Package or a side dish selection"
+        },
+        {
+            "manifest": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/Manifest-Zilean.json",
+            "description": "ADD ZILEAN: *TESTING ONLY* Add this to the Full Dinner Package or a side dish selection"
         }
     ],
     "cacheServers": [
