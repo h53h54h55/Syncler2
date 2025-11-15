@@ -1,0 +1,29 @@
+{
+  "_manifest" : {
+    "name": "Lobster SideDish No 40",
+    "id": "lob.SD40-v1",
+    "version": 1,
+    "classPath": "",
+    "permaUrl": "https://raw.githubusercontent.com/h53h54h55/Syncler2/main/zilean.json"
+  },
+"zilean-dmm": {
+    "name": "ZILEAN",
+    "type_": "public server",
+    "base_url": "https://zilean.elfhosted.com/dmm/search",
+    "response_type": "json",
+    "movie": {
+      "query": "/?imdbid={query}",
+      "keywords": "{imdbId}"
+    },
+    "episode": {
+      "query": "/?imdbid={query}&season={season}&episode={episode}",
+      "keywords": "{showImdbId}"
+    },
+    "json_format": {
+      "title": "raw_title",
+      "size": "size",
+      "hash": "info_hash",
+      "playbackFileName": "raw_title",
+      "playbackFileSize": "size"
+    }
+  }
